@@ -66,6 +66,21 @@
         height: 200px;
     }
     /* fine sezione 4 */
+    /* sezione 5 */
+    .debug #section-five{
+        height: 880px;
+    }
+    .debug .five-sec-container{
+      height: 500px;
+
+    }
+    .debug .left-five-box,
+    .debug .right-five-box{
+        height: 500px;
+        border: 1px solid black;
+    }
+    
+    /* fine sezione 5 */
     /* fine main debug*/
 
 /*FINE CLASSE DEBUG */
@@ -192,6 +207,41 @@
     }
     /* fine sezione 4 */
     /* section 5 */
+    #section-five{
+        padding-top: 6.375rem;
+        padding-bottom: 9.8125rem;
+    }
+    .five-sec-container{
+        display: flex;
+        margin: 0 auto;
+        width: 60%;
+    }
+    /* gestione margini testo parte sinistra */
+    .left-five-box{
+        width: 70%;
+    }
+    .left-five-box h3{
+        margin-bottom: 4.1875rem;
+    }
+    .p-five{
+        padding-top: 4.5rem;
+        padding-bottom: 9.8125rem;
+    }
+    .right-five-box{
+        width: 30%;
+    }
+     /* gestione margini testo  parte sinistra*/
+      /* gestione margini testo  parte destra*/
+    .p-five-right{
+        padding-top: 1.875rem;
+        padding-bottom: 2.0625rem;
+        color: var(--bg-fucsia-color);
+    }
+      .b-right-five{
+        margin-bottom: 16.5625rem;
+        background-color: var(--bg-fucsia-color);
+      }
+      /* gestione margini testo  parte destra*/
     /* fine section 5 */
 /* FINE MAIN */
 
