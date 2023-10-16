@@ -19,6 +19,17 @@
     }
      /* header */
 
+     /* main */
+     #first-grid-section{
+        height: 866px;
+        background-color: rgb(179, 107, 210);
+     }
+     .grid-box, .grid-box-large{
+        border: 1px solid black;
+     }
+   
+     /* fine main debug*/
+
 /*FINE CLASSE DEBUG */
 
 /* ################################################################################# */
@@ -40,6 +51,28 @@
 /* FINE HEADER */
 
 /* MAIN */
+    /* prima section */
+    #first-grid-section{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        gap: 10px;
+        justify-content: center;
+     }
+     .grid-box{
+        width: calc(100% / 3 - 20px);
+        background-color: #b5ddff;
+     }
+     .big-grid-box{
+        width: 64%;
+        display: flex;
+     }
+     .big-grid-box h3{
+        color: #0084fd;
+     }
+    /* fine prima section */
 /* FINE MAIN */
 
 /* FOOTER */
