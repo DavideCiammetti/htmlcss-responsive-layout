@@ -3,17 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* GLOBAL*/
+:root{
+    --bg-fucsia-color: #9792e4;
+}
+/* GLOBAL */
 /* CLASSE DEBUG */
     /* header */
     .debug #header-box{
         background-color: rgb(89, 89, 236);
     }
-    .right-nav{
+    .debug .right-nav{
         border: 1px solid black;
         background-color: aqua;
     }
-    .logo{
+    .debug .logo{
         border: 1px solid black;
         background-color: aqua;
     }
@@ -21,40 +25,47 @@
 
     /* main */
     /* sezione 1 */
-    #first-grid-section{
+    .debug  #first-grid-section{
         height: 866px;
         background-color: rgb(179, 107, 210);
     }
-    .grid-box, .grid-box-large{
+    .debug .grid-box, .grid-box-large{
         border: 1px solid black;
     }
     /* fine sezione 1 */
     /* sezione 2 */
-    #two-section{
+    .debug #two-section{
         height: 925px;
     }
-    .two-img-left{
+    .debug .two-img-left{
         height: 729px;
         width: 30%;
         border: 1px solid black;
     }
-    .two-img-right{
+    .debug .two-img-right{
         height: 560px;
         border: 1px solid black;
         width: 30%;
     }
     /* fine sezione 2 */
     /* sezione 3 */
-    #section-three{
+    .debug  #section-three{
         height: 1334px;
         background-color: #b5ddff;
     }
-    .rettangolo-sec-3,
-    .intestazione-sec-3{
+    .debug  .rettangolo-sec-3,
+    .debug  .intestazione-sec-3{
         height: 280px;
         border: 1px solid black;
     }
     /* fine sezione 3 */
+    /* sezione 4 */
+    .debug .grid-box-four{
+        background-color: white;
+        border: 1px solid black;
+        height: 200px;
+    }
+    /* fine sezione 4 */
     /* fine main debug*/
 
 /*FINE CLASSE DEBUG */
@@ -83,14 +94,17 @@
 /* MAIN */
     /* prima section */
     #first-grid-section{
-        width: 60vw;
+        padding-top: 3.125rem;
+        margin-bottom: 6.6rem;
+        width: 60%;
+     }
+     #first-grid-section,
+     .four-grid-container{
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        padding-top: 3.125rem;
         gap: 0.625rem;
         justify-content: center;
-        margin-bottom: 6.6rem;
      }
      .grid-box{
         width: calc(100% / 3 - 1.25rem);
@@ -106,7 +120,7 @@
     /* fine prima section */
     /* inizio seconda section */
     #two-section{
-        background-color: #9792e4;
+        background-color: var(--bg-fucsia-color);
     }
     .two-sec-container{
         margin: 0 auto;
@@ -139,7 +153,7 @@
         margin-bottom: 3.375rem;
     }
     .intestazione-sec-3 h3{
-        color: #9792e4;
+        color: var(--bg-fucsia-color);
         margin-bottom: 2.875rem;
     }
     .main-p-3{
@@ -149,11 +163,36 @@
     .rettangolo-sec-3{
         display: flex;
         margin-bottom: 2.0625rem;
+        background-color: var(--bg-fucsia-color);
     }
     .bott-3-sec{
         margin-bottom: 7.0625rem;
     }
     /* fine sezione 3 */
+    /* sezione 4 */
+    #four-grid-sec{
+        background-color: var(--bg-fucsia-color);
+        padding-bottom: 3.9375rem;
+    }
+    .grid-box-four{
+        width: calc(100% / 3 - 1.25rem);
+    }
+    .color{
+        color: var(--bg-fucsia-color);
+    }
+    .bg-color{
+        background-color: var(--bg-fucsia-color);
+        color: white;
+    }
+    .title-four-sec{
+        color: white;
+        padding-top: 4.25rem;
+        padding-bottom: 4.1875rem;
+        text-align: center;
+    }
+    /* fine sezione 4 */
+    /* section 5 */
+    /* fine section 5 */
 /* FINE MAIN */
 
 /* FOOTER */
