@@ -81,8 +81,16 @@
     }
     
     /* fine sezione 5 */
+    /* six section */
+    .debug .section-six{
+        height: 627px;
+    }
+    /* six section */
     /* fine main debug*/
-
+    /* footer debug */
+    #footer{
+        height: 233px;
+    }
 /*FINE CLASSE DEBUG */
 
 /* ################################################################################# */
@@ -110,7 +118,7 @@
     /* prima section */
     #first-grid-section{
         padding-top: 3.125rem;
-        margin-bottom: 6.6rem;
+        padding-bottom: 6.6rem;
         width: 60%;
      }
      #first-grid-section,
@@ -243,7 +251,49 @@
       }
       /* gestione margini testo  parte destra*/
     /* fine section 5 */
+    /* sezione 6 */
+    #section-six{
+        background-color: var(--bg-fucsia-color);
+        text-align: center;
+    }
+    .button-six{
+        background-color: white;
+        color: var(--bg-fucsia-color);
+    }
+    /* gestione spaziature testo */
+    .p-six{
+        padding-top: 4.25rem;
+        padding-bottom: 2.25rem;
+    }
+    .yellow-title{
+        padding-top: 3.625rem;
+        padding-bottom: 3.5625rem;
+        color: #fdc15f;
+    }
+    .p-six-txt{
+        padding-bottom: 40px;
+    }
+    .p-six-copyright{
+        padding-top: 2.25rem;
+        padding-bottom: 4.0625rem;
+    }
+    /* gestione spaziature testo */
+    .section-six,
+    p,
+    h3{
+        color: white;
+    }
+    /* fine sezione 6 */
 /* FINE MAIN */
 
 /* FOOTER */
+#footer{
+    background-color: #333333;
+    text-align: center;
+    padding-top: 2.8125rem;
+    padding-bottom: 42px;
+}
+.p-foot{
+    padding-bottom: 70px;
+}
 /* FINE FOOTER */
