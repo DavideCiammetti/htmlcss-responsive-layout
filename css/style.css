@@ -24,32 +24,6 @@ p{
 /* GLOBAL */
 /* CLASSE DEBUG */
     /* main */
-    /* sezione 2 */
-    .debug #two-section{
-        height: 925px;
-    }
-    .debug .two-img-left{
-        height: 729px;
-        width: 30%;
-        border: 1px solid black;
-    }
-    .debug .two-img-right{
-        height: 560px;
-        border: 1px solid black;
-        width: 30%;
-    }
-    /* fine sezione 2 */
-    /* sezione 3 */
-    .debug  #section-three{
-        height: 1334px;
-        background-color: #b5ddff;
-    }
-    .debug  .rettangolo-sec-3,
-    .debug  .intestazione-sec-3{
-        height: 280px;
-        border: 1px solid black;
-    }
-    /* fine sezione 3 */
     /* sezione 4 */
     .debug .grid-box-four{
         background-color: white;
@@ -195,26 +169,73 @@ p{
         background-color: var(--bg-fucsia-color);
     }
     .two-sec-container{
-        margin: 0 auto;
         display: flex;
         justify-content: center;
     }
+     /* parte sinistra */
     .two-img-left{
         margin-top: 8.4rem;
-        margin-right: 3.93rem;
+        margin-right: 2.0625rem;
+    }
+    .two-img-left img{
+        width: 100%;
     }
     .two-img-right,
     .two-img-left{
         margin-bottom: 4rem;
+        width: 30%;
     }
-    .two-img-right{
-        margin-top: 19.39rem;
+    .two-img-left h3{
+        margin-top: 6.25rem;
+        margin-bottom: 2.5rem;
+        font-size: 2.125rem;
     }
-    .img-two-sec{
-        padding-bottom: 8.625rem ; /*8.625rem = 138px  spazio tra immagine e testo*/
+    .two-img-left p{
+        font-size: 1rem;
+        color: white;
     }
+        /* parte sinistra */
+        /* parte destra */
+        .two-img-right{
+            margin-top: 19.39rem;
+            text-align: center;
+            background-color: white;
+            border-radius: 1.25rem;
+            padding-bottom: 2.0625rem;
+            margin-left: 2.0625rem;
+        }
+    .two-img-right img{
+        width: 50%;
+    }
+    .two-img-right p{
+        color: black;
+        font-style: italic;
+        font-size: 1.125rem;
+    }
+    .two-img-right h4{
+        padding-bottom: 1.875rem;
+        color: black;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .two-img-right span i{
+        font-size: 1.875rem;
+        background-color: var(--bg-fucsia-color);
+        padding: 20px 23px;
+        margin-top: 2.1875rem;
+        border-radius: 50%;
+    }
+        /* parte destra */
     /* fine seconda section */
     /* inizio sezione 3 */
+    .rettangolo-sec-3{
+        display: flex;
+        margin-bottom: 2.0625rem;
+        background-color: var(--bg-fucsia-color);
+        border-radius: 2.1875rem;
+        display: flex;
+        align-items: center;
+    }
     #section-three{
         display: flex;
         flex-direction: column;
@@ -224,21 +245,48 @@ p{
         text-align: center;
         margin-bottom: 3.375rem;
     }
+    .rettangolo-sec-3 img{
+        width: 45%;
+        display: block;
+        border-radius: 100%;
+        padding: 1.25rem .875rem;
+    }
     .intestazione-sec-3 h3{
         color: var(--bg-fucsia-color);
         margin-bottom: 2.875rem;
+        font-size: 3rem;
     }
     .main-p-3{
         margin-top: 4.31rem;
         margin-bottom: 2.75rem;
     }
-    .rettangolo-sec-3{
-        display: flex;
-        margin-bottom: 2.0625rem;
-        background-color: var(--bg-fucsia-color);
+    .last-p-3,
+    .main-p-3{
+        color: black;
     }
     .bott-3-sec{
         margin-bottom: 7.0625rem;
+    }
+    .img-rett-name{
+        margin-right: 4.4375rem;
+    }
+    .img-rett-name p{
+        color: white;
+        margin: 1.25rem;
+        font-size: 1.25rem;
+    }
+    .circle-img{
+        width: 200px;
+        height: 200px;
+    }
+    .first-circle{
+        background-image: url("./img/testimonial1.jpg");
+    }
+    .second-circle{
+        background-image: url('./img/testimonial2.jpg');
+    }
+    .third-circle{
+        background-image: url('./img/testimonial3.jpg');
     }
     /* fine sezione 3 */
     /* sezione 4 */
@@ -353,9 +401,6 @@ p{
 /* FINE FOOTER */
 
 @media screen and (max-width: 1460px){
-    .navbar{
-        background-color: red;
-    }
     .internal-box{
         display: block;
     }
@@ -363,3 +408,27 @@ p{
         margin-left: 0.7rem;
     }
 }
+
+@media screen and (max-width: 992px){
+    .navbar ul{
+        display: none;
+    }
+    .navbar .hamburger{
+        display: block;
+        color: white;
+        font-size: 1.25rem;
+    }
+    .two-sec-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .two-img-right{
+        margin-left: 0.01rem;
+        margin-top: 0.01rem;
+    }
+    .two-img-left{
+        margin-right: 0.01rem;
+    }
+}
+
