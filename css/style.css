@@ -137,6 +137,7 @@ p{
     }
     .internal-box{
         background-color: var(--jambo-bg);
+        border-radius: 1.25rem;
     }
     .description-container{
         display: flex;
