@@ -10,22 +10,13 @@ body{
 :root{
     --bg-fucsia-color: #9792e4;
 }
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
 /* GLOBAL */
 /* CLASSE DEBUG */
-    /* header */
-    .debug #header-box{
-        background-color: rgb(89, 89, 236);
-    }
-    .debug .right-nav{
-        border: 1px solid black;
-        background-color: aqua;
-    }
-    .debug .logo{
-        border: 1px solid black;
-        background-color: aqua;
-    }
-    /* header */
-
     /* main */
     /* sezione 1 */
     .debug  #first-grid-section{
@@ -100,6 +91,9 @@ body{
 /* ################################################################################# */
 
 /* HEADER */
+#header-box{
+    background-color: #0084fd;
+}
 .navbar{
     display: flex;
     height: 4.75rem;
@@ -108,9 +102,17 @@ body{
 }
 .right-nav{
     display: flex;
+    align-items: center;
 }
-.nav-link{
+.nav-link a{
     margin-right: 33px;
+    color: white;
+}
+.button-s{
+    color: black;
+    background-color: white;
+    border-radius: 1.25rem;
+    padding:13px 16px;
 }
 .hamburger{
     display: none;
