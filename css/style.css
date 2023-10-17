@@ -24,12 +24,6 @@ p{
 /* GLOBAL */
 /* CLASSE DEBUG */
     /* main */
-    /* sezione 4 */
-    .debug .grid-box-four{
-        background-color: white;
-        border: 1px solid black;
-        height: 200px;
-    }
     /* fine sezione 4 */
     /* sezione 5 */
     .debug #section-five{
@@ -264,6 +258,9 @@ p{
     .main-p-3{
         color: black;
     }
+    .name-3{
+        font-size: .8125rem;
+    }
     .bott-3-sec{
         margin-bottom: 7.0625rem;
     }
@@ -273,14 +270,13 @@ p{
     .img-rett-name p{
         color: white;
         margin: 1.25rem;
-        font-size: 1.25rem;
     }
     .circle-img{
         width: 200px;
         height: 200px;
     }
     .first-circle{
-        background-image: url("./img/testimonial1.jpg");
+        background-image:url("./img/testimonial1.jpg");
     }
     .second-circle{
         background-image: url('./img/testimonial2.jpg');
@@ -297,10 +293,14 @@ p{
     .four-grid-container{
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 1.25rem;
+        justify-content: center;
     }
     .grid-box-four{
-        width: calc(100% / 3 - 1.25rem);
+        width: calc(100% / 3 - 2.5rem);
+        background-color: white;
+        padding: 2rem;
+        border-radius: 30px;
     }
     .color{
         color: var(--bg-fucsia-color);
@@ -308,12 +308,27 @@ p{
     .bg-color{
         background-color: var(--bg-fucsia-color);
         color: white;
+        padding: .8125rem 2.1875rem;
     }
     .title-four-sec{
         color: white;
         padding-top: 4.25rem;
         padding-bottom: 4.1875rem;
         text-align: center;
+    }
+    .title-four-sec h3{
+        font-size: 3rem;
+    }
+    .desc-4-margin{
+        padding-bottom: 2rem;
+    }
+    .number{
+        font-size: 4.5rem;
+        padding: 3.4375rem 0 2.25rem 0;
+    }
+    .info-s-4{
+        font-size: 2rem;
+        padding-bottom: 2.25rem;
     }
     /* fine sezione 4 */
     /* section 5 */
@@ -429,6 +444,9 @@ p{
     }
     .two-img-left{
         margin-right: 0.01rem;
+    }
+    .grid-box-four{
+        width: calc(100% / 2 - 2.5rem);
     }
 }
 
