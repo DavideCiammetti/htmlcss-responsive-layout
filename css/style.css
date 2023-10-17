@@ -1,32 +1,29 @@
+@import'css/_partials/screen.css';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 /* GLOBAL*/
 :root{
     --bg-fucsia-color: #9792e4;
+    --jambo-bg: #b5ddff;
+    --blue-jumbo: #0084fd;
 }
 a, li{
     text-decoration: none;
     list-style: none;
 }
+p{
+    color: rgb(90, 110, 127);
+}
 
 /* GLOBAL */
 /* CLASSE DEBUG */
     /* main */
-    /* sezione 1 */
-    .debug  #first-grid-section{
-        height: 866px;
-        background-color: rgb(179, 107, 210);
-    }
-    .debug .grid-box, .grid-box-large{
-        border: 1px solid black;
-    }
-    /* fine sezione 1 */
     /* sezione 2 */
     .debug #two-section{
         height: 925px;
@@ -96,8 +93,8 @@ a, li{
 }
 .navbar{
     display: flex;
-    height: 4.75rem;
-    justify-content: space-around;
+    padding: 1.25rem;
+    justify-content:  space-between;
     align-items: center;
 }
 .right-nav{
@@ -121,30 +118,76 @@ a, li{
 
 /* MAIN */
     /* prima section */
-    #first-grid-section{
-        padding-top: 3.125rem;
-        padding-bottom: 6.6rem;
-        width: 60%;
-     }
-     #first-grid-section,
-     .four-grid-container{
-        margin: 0 auto;
+    .container-grid{
+        margin-top: 3.125rem;
+        margin-bottom: 6.5625rem;
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        gap: 0.625rem;
-        justify-content: center;
-     }
-     .grid-box{
+        gap: 10px;
+    }
+    .box-grid{
         width: calc(100% / 3 - 1.25rem);
-        background-color: #b5ddff;
-     }
-     .big-grid-box{
-        width: 64%;
+        padding: .625rem;
         display: flex;
+    }
+    /* gestione blocco grande */
+    .big-box{
+        width: calc((100% / 3) * 2 - 1.875rem);
+    }
+    .internal-box{
+        background-color: var(--jambo-bg);
+    }
+    .description-container{
+        display: flex;
+    }
+    .description{
+        padding-bottom: 3.5625rem;
+        padding-left: 1.5625rem;
+    }
+    .grid-img{
+        width: 50%;
+        padding-top: .3125rem;
+        margin-left: 5.625rem;
+    }
+    .grid-img img{   /*contenitore immagine*/
+        width: 56%;
+        display: block;
+    }
+    .grid-sec-button{
+        background-color: var(--blue-jumbo);
+        color: white;
+    }
+    /* margini blocco grande */
+    .description h3{
+        margin-top: 2.4375rem;
+        margin-bottom: 2.25rem;
+        color: var(--blue-jumbo);
      }
-     .big-grid-box h3{
-        color: #0084fd;
+
+     .description p{
+        margin-bottom: 2.5rem;
      }
+     .description span{
+        margin-bottom: 3.75rem;
+     }
+     /* margini blocco grande */
+    /* gestione blocco grande */
+    .internal-box .ico-grid i{
+        font-size: 3.125rem;
+        margin: 1.9375rem 0 ;
+    }
+    .internal-box .ico-grid i, h4{
+        color: var(--blue-jumbo);
+    }
+    .internal-box h4{
+        padding-bottom: 2.5625rem ;
+    }
+    .descriprion-small{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    
     /* fine prima section */
     /* inizio seconda section */
     #two-section{
@@ -201,6 +244,11 @@ a, li{
     #four-grid-sec{
         background-color: var(--bg-fucsia-color);
         padding-bottom: 3.9375rem;
+    }
+    .four-grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
     .grid-box-four{
         width: calc(100% / 3 - 1.25rem);
@@ -283,7 +331,7 @@ a, li{
         padding-bottom: 4.0625rem;
     }
     /* gestione spaziature testo */
-    .section-six,
+    .section-six
     p,
     h3{
         color: white;
@@ -302,3 +350,15 @@ a, li{
     padding-bottom: 70px;
 }
 /* FINE FOOTER */
+
+@media screen and (max-width: 1460px){
+    .navbar{
+        background-color: red;
+    }
+    .internal-box{
+        display: block;
+    }
+    .grid-img{
+        margin-left: 0.7rem;
+    }
+}
